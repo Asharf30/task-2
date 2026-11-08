@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>اداره نتائج الطلاب</h1>
+
+    <h2>اضافة طالب جديد</h2>
+
+    <form id="studentForm">
+      <label>رقم الجلوس</label>
+      <input type="number" id="studentId" required />
+      <br /><br />
+
+      <label>اسم الطالب</label>
+      <input type="text" id="studentName" required />
+      <br /><br />
+
+      <label>نسبة الحضور</label>
+      <input type="number" id="attendance" min="0" max="100" required />
+      <br /><br />
+
+      <label>درجة المادة الأولى</label>
+      <input type="number" id="grade1" min="0" max="100" required />
+      <br /><br />
+
+      <label>درجة المادة الثانية</label>
+      <input type="number" id="grade2" min="0" max="100" required />
+      <br /><br />
+
+      <label>درجة المادة الثالثة</label>
+      <input type="number" id="grade3" min="0" max="100" required />
+      <br /><br />
+         
+      <button type="submit">اضافة الطالب</button>
+    </form>
+
+    <p id="message"></p>
+
+    <h2>تقرير الطلاب</h2>
+
+    <p id="studentsCount">عدد الطلاب 0</p>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>رقم الجلوس</th>
+          <th>الاسم</th>
+          <th>المتوسط</th>
+          <th>التقدير</th>
+          <th>الحضور</th>
+          <th>النتيجة</th>
+        </tr>
+      </thead>
+
+      <tbody id="studentsTable"></tbody>
+    </table>
+
+    <h2>الرافه </h2>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>رقم الجلوس</th>
+          <th>الاسم</th>
+          <th>المتوسط القديم</th>
+          <th>المتوسط الجديد</th>
+        </tr>
+      </thead>
+
+      <tbody id="mercyTable"></tbody>
+    </table>
+
+    <h3 id="mercyAverage">متوسط الرافه 0</h3>
+
+    <script src="task2.js"></script>
+  </body>
+</html>
